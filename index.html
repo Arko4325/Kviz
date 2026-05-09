@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бортовий термінал: Перевірка даних</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Випробування: Доступ до бази</h1>
+            <h1>запам'ятовуй код</h1>
+        </header>
+
+        <div id="quiz-box" class="quiz-box">
+            <div id="question-area">
+                <div id="progress">Крок 1 з 6</div>
+                <div id="question-text">Завантаження питання...</div>
+            </div>
+
+            <div id="answer-buttons" class="answer-grid">
+                </div>
+
+            <button id="next-button" class="btn next-btn" disabled>Наступне питання</button>
+        </div>
+
+        <div id="result-box" class="result-box" style="display: none;">
+            <h2>ТЕРМІНАЛ АВТОРИЗАЦІЇ</h2>
+            <p>Введіть 6-значний код, який ви зібрали:</p>
+            <input type="text" id="code-input" maxlength="6" placeholder="******" style="text-transform: uppercase;">
+            <p id="score-text"></p>
+            <button id="check-code-button" class="btn">ПІДТВЕРДИТИ КОД</button>
+            <button id="restart-button" class="btn" style="margin-top: 10px; display: none;">ПЕРЕЗАПУСТИТИ ТЕСТ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
